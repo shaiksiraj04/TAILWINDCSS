@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+<div class="max-w-sm mx-auto bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden group">
+  <div class="relative bg-slate-100 pt-[100%] overflow-hidden">
+    <span class="absolute top-3 left-3 bg-rose-500 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">Sale</span>
+    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Premium Running Shoes">
+  </div>
+  <div class="p-5">
+    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Footwear</span>
+    <h3 class="mt-1 text-lg font-bold text-slate-800 line-clamp-1 group-hover:text-indigo-600 transition-colors">AeroStride Pro Runners</h3>
+    <div class="mt-2 flex items-center justify-between">
+      <div class="flex items-baseline gap-2">
+        <span class="text-xl font-extrabold text-slate-900">$120.00</span>
+        <span class="text-sm text-slate-400 line-through">$160.00</span>
+      </div>
+    </div>
+    <button class="mt-4 w-full bg-slate-900 hover:bg-indigo-600 text-white font-medium py-2.5 px-4 rounded-xl transition-colors duration-300 flex items-center justify-center gap-2">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+      Add to Cart
+    </button>
+  </div>
+</div>
