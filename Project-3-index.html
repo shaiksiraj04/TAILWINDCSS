@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Dashboard - Core Systems</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 font-sans antialiased text-slate-200">
+
+  <!-- Component 21: Full Dashboard Outer Flex Wrapper Frame -->
+  <div class="w-full h-screen overflow-hidden flex">
+    
+    <!-- Fixed Left Control Sidebar Section -->
+    <aside class="hidden lg:flex flex-col w-64 bg-slate-900 text-white shrink-0 border-r border-slate-800/80">
+      <div class="h-16 flex items-center px-6 border-b border-slate-800">
+        <span class="text-md font-black tracking-wider text-indigo-400">CORE.OS WORKFLOW</span>
+      </div>
+      <nav class="flex-1 p-4 space-y-1 overflow-y-auto">
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 bg-indigo-600 rounded-lg text-sm font-bold text-white shadow-sm">Metrics Dashboard</a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 text-slate-400 hover:text-white rounded-lg text-sm font-medium transition-colors">Infrastructure</a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 text-slate-400 hover:text-white rounded-lg text-sm font-medium transition-colors">Security Rules</a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2.5 text-slate-400 hover:text-white rounded-lg text-sm font-medium transition-colors">Global Logs</a>
+      </nav>
+      <div class="p-4 border-t border-slate-800 flex items-center gap-3">
+        <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></div>
+        <span class="text-xs font-semibold text-slate-400">All Nodes Operational</span>
+      </div>
+    </aside>
+
+    <!-- Main Dynamic Application Window Pane -->
+    <div class="flex-1 flex flex-col min-w-0 overflow-hidden">
+      
+      <!-- Sticky Top Window Navigation Header -->
+      <header class="h-16 bg-slate-900/80 backdrop-blur-md border-b border-slate-800/80 flex items-center justify-between px-6 z-20 shrink-0">
+        <div class="flex items-center gap-4">
+          <h1 class="text-lg font-bold text-white tracking-tight">Deployment Command Engine</h1>
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-8 h-8 rounded-full border border-slate-700" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="User">
+        </div>
+      </header>
+
+      <!-- Scrollable Inner Panel Core Content Area -->
+      <main class="flex-1 overflow-y-auto p-6 space-y-8 bg-slate-950">
+        <div class="max-w-7xl mx-auto space-y-8">
+          
+          <!-- Top Grid Layer: Component 27: Animated Skeleton States + Metric Metrics Boxes -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <!-- Skeleton Metrics Indicator Panel (Pulse Loading representation) -->
+            <div class="md:col-span-4 bg-slate-900 border border-slate-800/80 rounded-2xl p-5 space-y-4 animate-pulse">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-slate-800 rounded-full shrink-0"></div>
+                <div class="flex-1 space-y-2">
+                  <div class="h-3 bg-slate-800 rounded-md w-1/3"></div>
+                  <div class="h-2.5 bg-slate-800 rounded-md w-1/2"></div>
+                </div>
+              </div>
+              <div class="space-y-2 border-t border-slate-800 pt-3">
+                <div class="h-2.5 bg-slate-800 rounded-md w-full"></div>
+                <div class="h-2.5 bg-slate-800 rounded-md w-4/5"></div>
+              </div>
+            </div>
+
+            <!-- Active Control Track Panel: Component 26 Layout variation (Volume/SLA controller mix) -->
+            <div class="md:col-span-8 bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+              <div class="flex justify-between items-start">
+                <div>
+                  <h4 class="text-sm font-bold text-white">Dynamic Global Optimization Throughput</h4>
+                  <p class="text-xs text-slate-400 mt-1">Adjust current processing limits routed directly to downstream proxy handlers.</p>
+                </div>
+                <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Live Scaling</span>
+              </div>
+              <div class="mt-4">
+                <div class="flex justify-between text-xs text-slate-400 mb-1">
+                  <span>Current Edge Throttle Level</span>
+                  <span class="font-bold text-indigo-400">250 Nodes / Sec</span>
+                </div>
+                <!-- Component 28 Slide Input Variant Integration -->
+                <input type="range" min="0" max="500" value="250" class="w-full accent-indigo-500 cursor-pointer bg-slate-800 h-1.5 rounded-lg appearance-none">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Grid Layer: Component 25: Horizontal Kanban Status Board Setup -->
+          <div>
+            <h3 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Pipeline Status Boards</h3>
+            <div class="w-full flex gap-5 overflow-x-auto pb-4 items-start select-none">
+              
+              <!-- Column 1: Backlog Task Lists -->
+              <div class="w-80 bg-slate-900/60 rounded-xl border border-slate-800 p-4 flex flex-col shrink-0 max-h-[400px]">
+                <div class="flex justify-between items-center mb-3">
+                  <div class="flex items-center gap-2">
+                    <h5 class="text-xs font-bold text-slate-300 uppercase tracking-wider">Backlog Logs</h5>
+                    <span class="bg-slate-800 text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded-full">1</span>
+                  </div>
+                </div>
+                <div class="space-y-3 overflow-y-auto">
+                  <div class="bg-slate-850 p-4 rounded-xl border border-slate-800 shadow-md">
+                    <span class="bg-slate-800 text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Core Sys</span>
+                    <h6 class="text-xs font-bold text-white mt-2">Initialize cluster metrics tracking configurations</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2: Component 25 Content Structure (In Progress) -->
+              <div class="w-80 bg-slate-900/60 rounded-xl border border-slate-800 p-4 flex flex-col shrink-0 max-h-[400px]">
+                <div class="flex justify-between items-center mb-3">
+                  <div class="flex items-center gap-2">
+                    <h5 class="text-xs font-bold text-slate-300 uppercase tracking-wider">In Progress Execution</h5>
+                    <span class="bg-indigo-900/40 text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded-full">1</span>
+                  </div>
+                </div>
+                <div class="space-y-3 overflow-y-auto">
+                  <div class="bg-slate-850 p-4 rounded-xl border border-slate-700/50 shadow-md cursor-grab hover:border-slate-500 transition-colors">
+                    <span class="bg-indigo-900/60 text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Feature Architecture</span>
+                    <h6 class="text-xs font-bold text-white mt-2">Integrate dynamic web layouts</h6>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+</html>
