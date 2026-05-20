@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+<div class="max-w-4xl mx-auto px-4 py-12 relative">
+  <!-- Central Axis Vector Line -->
+  <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-slate-200 z-0"></div>
+
+  <div class="space-y-12 relative z-10">
+    <!-- Left Alternating Event Row -->
+    <div class="flex flex-col sm:flex-row items-center justify-between group">
+      <div class="w-full sm:w-5/12 text-left sm:text-right order-2 sm:order-1">
+        <span class="text-xs font-bold text-indigo-600">October 14, 2025</span>
+        <h4 class="text-base font-extrabold text-slate-900 mt-1">Series A Capital Valuation</h4>
+        <p class="text-xs text-slate-500 mt-1 leading-relaxed">Secured institutional funding to expand core distributed edge infrastructure execution clusters globally.</p>
+      </div>
+      <div class="w-8 h-8 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center ring-4 ring-slate-50 z-20 order-1 sm:order-2 my-2 sm:my-0"></div>
+      <div class="hidden sm:block w-5/12 order-3"></div>
+    </div>
+
+    <!-- Right Alternating Event Row -->
+    <div class="flex flex-col sm:flex-row items-center justify-between group">
+      <div class="hidden sm:block w-5/12 order-1"></div>
+      <div class="w-8 h-8 rounded-full bg-emerald-500 text-white font-bold flex items-center justify-center ring-4 ring-slate-50 z-20 order-2 my-2 sm:my-0"></div>
+      <div class="w-full sm:w-5/12 order-3 text-left">
+        <span class="text-xs font-bold text-emerald-600">January 09, 2026</span>
+        <h4 class="text-base font-extrabold text-slate-900 mt-1">Open Source Beta Deployment</h4>
+        <p class="text-xs text-slate-500 mt-1 leading-relaxed">Released our custom layout component architecture to public package systems with native configuration layers.</p>
+      </div>
+    </div>
+  </div>
+</div>
